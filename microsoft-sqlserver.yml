@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: sql-server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=gA;t3kKEcYV?%;@D>Hyc
+    ports:
+      - "1433:1433"
+    volumes:
+      - /opt/mssql:/var/opt/mssql
